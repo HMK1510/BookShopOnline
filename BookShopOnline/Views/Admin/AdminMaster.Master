@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="BookShopOnline.Views.Admin.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style>
+        #left{
+            color:white;
+            height: 945px;
+            background-color:teal;
+        }
+        label{
+            color:white;
+        }
+    </style>
+    <link href="../../Assets/Lib/css/bootstrap.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2" id="left">
+                <div style="height:120px">
+
+                </div>
+                <div class="p-2">
+                    <div class="mb-3">
+                        <img src="../../Assets/Images/book-solid.png" height="52" width="52" />
+                        <a href="Books.aspx"><label>Books</label></a>
+                    </div>
+                    <div class="mb-3">
+                        <img src="../../Assets/Images/account 1.png" height="52" width="52" />
+                        <a href="Author.aspx"><label>Authors</label></a>
+                    </div>
+                    <div class="mb-3">
+                        <img src="../../Assets/Images/id-card 1.png" height="52" width="52" />
+                        <a href="Seller.aspx"><label>Sellers</label></a>
+                    </div>
+                    <div class="mb-3">
+                        <img src="../../Assets/Images/menu 1.png" height="52" width="52" />
+                        <a href="Categories.aspx"><label>Categories</label></a>
+                    </div>
+                    <div style="height:400px">
+
+                    </div>
+                    <div class="mb-3">
+                        <img src="../../Assets/Images/right-from-bracket-solid.png" height="52" width="52" />
+                        <a href="../Login.aspx"><label>Logout</label></a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-10">
+                <form id="form1" runat="server">
+                    <div>
+                        <asp:ContentPlaceHolder ID="MyContent" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </form>
+            </div>
+        </div>  
+    </div>
+    
+</body>
+</html>
